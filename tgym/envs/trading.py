@@ -75,7 +75,7 @@ class SpreadTrading(Env):
         self._exit_price = 0
         self._closed_plot = False
 
-        for i in range(self._history_length):
+        for _ in range(self._history_length):
             self._prices_history.append(self._data_generator.next())
 
         observation = self._get_observation()

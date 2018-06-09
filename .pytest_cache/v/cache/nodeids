@@ -1,0 +1,9 @@
+[
+  "tests/test_utils.py::test_calc_spread",
+  "tests/envs/test_trading.py::TestSpreadTrading::()::test_init",
+  "tests/envs/test_trading.py::TestSpreadTrading::()::test_step",
+  "tests/envs/test_trading.py::TestSpreadTrading::()::test_reset",
+  "tests/gens/test_csvstream.py::test_csv_streamer",
+  "tests/gens/test_random.py::test_random_walk",
+  "tests/gens/test_random.py::test_ar1"
+]

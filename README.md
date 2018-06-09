@@ -5,7 +5,13 @@ It is currently composed of a single environment and implements a generic way of
 
 ## Installation
 
+From pypi
+
 `pip install tgym`
+
+or locally
+
+`python3 setup.py install`
 
 We strongly recommend using virtual environments. A very good guide can be found at http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/.
 
