@@ -24,7 +24,7 @@ environment = SpreadTrading(spread_coefficients=[1],
 
 environment.render()
 while True:
-    action = raw_input("Action: Buy (b) / Sell (s) / Hold (enter): ")
+    action = input("Action: Buy (b) / Sell (s) / Hold (enter): ")
     if action == 'b':
         action = [0, 1, 0]
     elif action == 's':

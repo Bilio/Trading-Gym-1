@@ -18,4 +18,4 @@ class RandomGenerator(DataGenerator):
 time_series_length = 10
 mygen = RandomGenerator()
 prices_time_series = [mygen.next() for _ in range(time_series_length)]
-print prices_time_series
+print(prices_time_series)
