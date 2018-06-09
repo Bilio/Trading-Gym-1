@@ -1,1 +1,1 @@
-from trading import SpreadTrading
+from .trading import SpreadTrading

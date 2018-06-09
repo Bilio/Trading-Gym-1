@@ -68,7 +68,7 @@ class DataGenerator(object):
             numpy.array: next row of the generator
         """
         try:
-            return self.generator.next()
+            return next(self.generator)
         except StopIteration as e:
             self._iterator_end()
             raise(e)
