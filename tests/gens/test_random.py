@@ -3,13 +3,13 @@ from tgym.gens import AR1, RandomWalk
 
 
 def test_random_walk():
-    rw = RandomWalk(ba_spread=0.1)
+    rw = RandomWalk(spread=0.1)
     val = rw.next()
     assert np.isclose(val[1] - val[0], 0.1)
 
 
 def test_ar1():
-    rw = AR1(a=0.1, ba_spread=0.1)
+    rw = AR1(a=0.1, spread=0.1)
     val = rw.next()
     assert np.isclose(val[1] - val[0], 0.1)
     vals = [rw.next()[0] for i in range(100000)]

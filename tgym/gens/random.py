@@ -26,7 +26,7 @@ class AR1(DataGenerator):
     """Standardised AR1 data generator
     """
     @staticmethod
-    def _generator(a, ba_spread=0):
+    def _generator(a, spread=0):
         """Generator for standardised AR1
 
         Args:
@@ -40,5 +40,5 @@ class AR1(DataGenerator):
         sigma = np.sqrt(1 - a**2)
         val = np.random.normal(scale=sigma)
         while True:
-            yield val, val + ba_spread
+            yield val, val + spread
             val += (a - 1) * val + np.random.normal(scale=sigma)
